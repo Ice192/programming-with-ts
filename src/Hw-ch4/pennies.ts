@@ -1,3 +1,4 @@
+const readline = require("readline-sync");
 // 16) Pennies for Pay
 function toDollar (penny: number): number{
     return penny/100
@@ -13,5 +14,9 @@ function pennies (days: number):number{
     return dollar
 }
 
-const days = 10
-console.log(`Number of dollar is ${pennies(days)}$`);
+const days = readline.question("How much day? ")
+if(!isNaN(days)){
+    console.log(`Number of dollar is ${pennies(days)}$`);
+} else {
+    console.log("Invalid input")
+}

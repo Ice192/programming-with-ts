@@ -7,7 +7,7 @@ while(true){
     const number = readline.question("Input number: ") // user input
     const result = firstLoop(number)
     console.log(result)
-    if(result > 100 || Number.isNaN(result)){
+    if(result > 100 || isNaN(result)){
         break
     }
     

@@ -6,7 +6,9 @@ let result = 0;
 for (let i = 0; i < 10; i++) {
     const num = readline.question("Input Number: ");
     const finalNum = Number(num);
-    result += finalNum;
+    if (!isNaN(finalNum)) {
+        result += finalNum;
+    }
 }
 console.log("Result = ", result);
 //# sourceMappingURL=algoritma-workbench-4.js.map

@@ -4,8 +4,7 @@ function add (a:number, b:number): number {
     return a + b
 }
 
-try {
-    let isAgree = true
+let isAgree = true
     while(isAgree){
         const num1: number = readline.question("First Number: ")
         const num2: number = readline.question("Second Number: ")
@@ -23,6 +22,3 @@ try {
                 isAgree = false
             }
     }
-} catch (error) {
-    console.log(error)
-}
