@@ -4,13 +4,12 @@ Object.defineProperty(exports, "__esModule", { value: true });
 function firstLoop(num) {
     return num * 10;
 }
-let iteration = 1;
-while (iteration > 0) {
-    if (firstLoop(iteration) > 100) {
+while (true) {
+    const number = 11; // user input
+    console.log(firstLoop(number));
+    if (firstLoop(number) > 100) {
         break;
     }
-    console.log(firstLoop(iteration));
-    iteration++;
 }
 // 2) Algoritma Workbench
 function add(a, b) {
@@ -77,8 +76,52 @@ function val(num) {
         return `Invalid Input`;
     }
     else {
+        console.log(`Your input is ${num}`);
         return `Valid Input`;
     }
 }
 console.log(val(number));
+// 10) Bug Collector
+function bugCollector() {
+    let result = 0;
+    for (let i = 0; i < 5; i++) {
+        const bug = 4; //ask number of bugs
+        result += bug;
+    }
+    return result;
+}
+console.log("Total bug is ", bugCollector());
+// 11) Calories Burned
+function caloriesBurned() {
+    const burn = 4.2;
+    let calories = 0;
+    for (let i = 10; i <= 30; i += 5) {
+        const calorieBurn = burn * i;
+        calories += calorieBurn;
+        console.log(calories);
+    }
+    return calories;
+}
+console.log("Total Calories it will burn is ", caloriesBurned());
+// 12) Budget Analysis
+const amount = 1000000; // user input
+function budgetAnalysis(amount) {
+    let isAddCost = true;
+    while (isAddCost) {
+        const cost = 10000; // user input cost
+        amount -= cost;
+        const ask = 'no'; // ask user to add cost or no
+        if (ask === 'no') {
+            isAddCost = false;
+        }
+    }
+    return amount;
+}
+const resultAmount = budgetAnalysis(amount);
+if (resultAmount > 0) {
+    console.log(`the rest of your money is ${resultAmount}`);
+}
+else {
+    console.log(`your budget is not enough ${resultAmount}`);
+}
 //# sourceMappingURL=Hw-ch4.js.map
