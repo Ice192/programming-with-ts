@@ -143,3 +143,87 @@ if(resultAmount > 0){
 }
 
 // 13) Distance Travele
+function traveled (speed: number, hour: number): number{
+    let result = 0
+    for(let i = 1; i <= hour; i++){
+        result = speed * i
+        console.log(`in ${i} hour, Distance traveled is ${result}`)
+    }
+    return result
+}
+
+const speed = 50
+const hour = 5
+console.log(traveled(speed,hour))
+
+// 14) Average Rainfall
+function averageRainfall(years: number) : number{
+    let totalRainfall = 0
+    let countRainfall = 0
+    
+    for(let i = 0; i < years; i++){
+        for(let month = 0; month < 12; month++){
+            const rainfall = 12 // ask input number of rainfall
+            totalRainfall += rainfall
+            countRainfall++
+        }
+    }
+    console.log("Total Rainfall is ", totalRainfall);
+    console.log("Total month is ", countRainfall);
+    
+    return totalRainfall/countRainfall
+}
+
+const year = 4 //ask user input year
+console.log("Average of Rainfall is ",averageRainfall(year))
+
+// 15) Celsius to Fahrenheit Table
+function convert(c: number):number{
+    return 9/5 * c + 32
+}
+
+for(let i = 0; i <= 20; i++){
+    console.log(`${i}C = ${convert(i)}F`)
+}
+
+// 16) Pennies for Pay
+function toDollar (penny: number): number{
+    return penny/100
+}
+function pennies (days: number):number{
+    let penny = 1
+    for(let i = 0; i < days; i++){
+        penny *= 2
+    }
+    console.log("Total pennies is ", penny);
+    
+    const dollar = toDollar(penny)
+    return dollar
+}
+
+const days = 10
+console.log(`Number of dollar is ${pennies(days)}$`);
+
+// 17) Sum of Numbers
+let sum = 0
+while(true){
+    const number = -5 //ask user to input number
+    if(number > 0){
+        sum += number
+    } else {
+        break
+    }
+}
+
+console.log("Total sum is ", sum);
+
+// 18) Ocean Level
+let resultOcean = 0
+for(let i = 1; i <= 25; i++){
+    const rising = 1.6 * i
+    resultOcean += rising
+    console.log(`In ${i} year, ocean will rising is ${resultOcean} milimeter`);
+}
+console.log("Ocean will rising in 25 years is ", resultOcean);
+
+
