@@ -124,4 +124,5 @@ if (resultAmount > 0) {
 else {
     console.log(`your budget is not enough ${resultAmount}`);
 }
+// 13) Distance Travele
 //# sourceMappingURL=Hw-ch4.js.map
