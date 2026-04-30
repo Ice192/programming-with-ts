@@ -1,4 +1,5 @@
-const readline = require("readline-sync");
+import { question } from "readline-sync"
+
 //Exercise 4 - Restourant Selector
 function restourantSelector (vegetarian: boolean, vegan: boolean, gluten: boolean): string{
     if(vegetarian && vegan && gluten){
@@ -13,9 +14,9 @@ function restourantSelector (vegetarian: boolean, vegan: boolean, gluten: boolea
         return 'None'
     }
 }
-const isVegetarian: string = readline.question("Anyone a vegetarian ")
-const isVegan: string = readline.question("Anyone a vegan ")
-const isgluten: string = readline.question("Anyone a gluten-free ")
+const isVegetarian = question("Anyone a vegetarian ")
+const isVegan = question("Anyone a vegan ")
+const isgluten = question("Anyone a gluten-free ")
 const vegetarian: boolean = (isVegetarian === 'yes') ? true : false
 const vegan: boolean = (isVegan === 'yes') ? true : false
 const gluten: boolean = (isgluten === 'yes') ? true : false

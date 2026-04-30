@@ -1,4 +1,5 @@
-const readline = require("readline-sync");
+import { question } from "readline-sync"
+
 // 14) Average Rainfall
 function averageRainfall(years: number) : number{
     let totalRainfall = 0
@@ -7,7 +8,7 @@ function averageRainfall(years: number) : number{
     
     for(let i = 0; i < years; i++){
         for(let month = 0; month < 12; month++){
-            const rainfall: number = readline.question("Number rainfall: ")
+            const rainfall = question("Number rainfall: ")
             const current = Number(rainfall)
             if(!isNaN(current)){
                 totalRainfall += current
@@ -25,5 +26,6 @@ function averageRainfall(years: number) : number{
     return totalRainfall/countRainfall
 }
 
-const year = readline.question("How many years? ")
-console.log("Average of Rainfall is ",averageRainfall(year))
+const year = question("How many years? ")
+const numYear = Number(year)
+console.log("Average of Rainfall is ",averageRainfall(numYear))

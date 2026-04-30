@@ -1,4 +1,4 @@
-const readline = require("readline-sync");
+import { question } from "readline-sync"
 
 //Exercise 3 - Shipping Charges
 function shippingCharges (weight: number) :number{
@@ -12,9 +12,15 @@ function shippingCharges (weight: number) :number{
         return 4.75 * weight
     }
 }
-const weight = readline.question("Input pound: ")
-if(!isNaN(weight)){
-    console.log(`Shipping charges with ${weight} pounds is ${shippingCharges(weight)}$`)
+const weight = question("Input pound: ")
+const numWeight = Number(weight)
+
+try {
+    if(!isNaN(numWeight)){
+    console.log(`Shipping charges with ${numWeight} pounds is ${shippingCharges(numWeight)}$`)
 } else {
     throw new Error ("Input number")
+}
+} catch (error) {
+    console.log(error)
 }

@@ -1,4 +1,5 @@
-const readline = require("readline-sync");
+import { question } from "readline-sync"
+
 // 8) Validation Input - Algoritma Workbench
 function validation (num: number) : string{
     if(num > 0){
@@ -8,5 +9,6 @@ function validation (num: number) : string{
     }
 }
 
-const number: number = readline.question("Check Validation Number: ")
-console.log(validation(number))
+const number = question("Check Validation Number: ")
+const aNum = Number(number)
+console.log(validation(aNum))

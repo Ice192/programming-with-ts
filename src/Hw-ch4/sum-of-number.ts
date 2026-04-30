@@ -1,11 +1,11 @@
-const readline = require("readline-sync");
+import { question } from "readline-sync"
 
 // 17) Sum of Numbers
 let sum = 0
 while(true){
-    const number = readline.question("Input Number: ")
+    const number = question("Input Number: ")
     const convertNum = Number(number)
-    if(convertNum > 0 && !isNaN(convertNum)){
+    if(convertNum > 0 ){
         sum += convertNum
     } else {
         break
