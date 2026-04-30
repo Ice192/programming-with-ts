@@ -13,9 +13,6 @@ function generate (num: number): string{
     return result
 }
 
-// user input
-
-
 function decide (computer: string, user: string) : string | undefined{
             if(computer === user){
                 return ''
