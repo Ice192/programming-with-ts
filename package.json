@@ -13,7 +13,7 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "type": "commonjs",
+  "type": "module",
   "bugs": {
     "url": "https://github.com/Ice192/programming-with-ts/issues"
   },
@@ -22,6 +22,8 @@
     "readline-sync": "^1.4.10"
   },
   "devDependencies": {
-    "@types/node": "^25.6.0"
+    "@types/node": "^25.6.0",
+    "@types/readline-sync": "^1.4.8"
+
   }
 }
