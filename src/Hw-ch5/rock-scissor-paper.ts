@@ -1,16 +1,14 @@
 import { question } from "readline-sync"
 
 
-function generate (num: number): string{
-    let result = ''
+function generate (num: number): "rock" | "paper" | "scissor"{
     if(num === 1){
-        result = 'rock'
+        return 'rock'
     } else if (num === 2){
-        result = 'paper'
-    } else if (num === 3){
-        result = 'scissor'
+        return 'paper'
+    } else {
+        return 'scissor'
     }
-    return result
 }
 
 function decide (computer: string, user: string) : string | undefined{
@@ -48,9 +46,7 @@ function decide (computer: string, user: string) : string | undefined{
             }
         }
 
-function game (){
     let start = true
-
     while(start){
         const random = Math.floor(Math.random()*3) + 1
         const computer = generate(random)
@@ -60,12 +56,8 @@ function game (){
             console.log(`You ${user} vs ${computer} Computer`)
             if(result !== ''){
                 start = false
-                console.log(result);
-                
+                console.log(result);  
             }
         }
-
     }
-}
 
-game()
