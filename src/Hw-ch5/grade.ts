@@ -68,8 +68,6 @@ function medianScore (scores: number[]): number|undefined{
             }
     } else {
         const index = Math.floor(scores.length/2)
-        console.log(index);
-        
         median = scores[index]
     }
     return median

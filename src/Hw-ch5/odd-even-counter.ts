@@ -5,10 +5,10 @@ function isOdd (num:number): boolean {
         return true
     }
 }
-
+let oddCounter = 0
+let evenCounter = 0
 for(let i = 0; i < 100; i++){
-    let oddCounter = 0
-    let evenCounter = 0
+    
     const number = Math.floor(Math.random()* 100 ) + 1
 
     if(isOdd(number)){
@@ -20,3 +20,6 @@ for(let i = 0; i < 100; i++){
         console.log(`${number} is Even`);
     }
 }
+
+console.log("Total odd number: ",oddCounter);
+console.log("Total even number: ",evenCounter);
