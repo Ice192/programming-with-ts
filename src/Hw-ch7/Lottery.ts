@@ -1,5 +1,3 @@
-import { log } from "node:console"
-
 const lottery_number = []
 
 for(let i = 0; i < 7;i++){
