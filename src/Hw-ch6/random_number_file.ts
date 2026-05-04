@@ -1,4 +1,4 @@
-import fs, { read } from "fs"
+import fs from "fs"
 import { question } from "readline-sync"
 const input = question("How many random number : ")
 const num = Number(input)
