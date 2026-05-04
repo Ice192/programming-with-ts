@@ -1,4 +1,3 @@
-import { group } from "node:console";
 import { question } from "readline-sync";
 
 const valid_char = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789-"
