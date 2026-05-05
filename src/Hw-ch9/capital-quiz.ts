@@ -53,6 +53,7 @@ const capitals:{[key:string]: string} = {
         "Wyoming": "Cheyenne"
     }
 
+    // Mengubah menjadi huruf kecil
     function toLower (huruf: string): string{
         const huruf_besar = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
         const huruf_kecil = "abcdefghijklmnopqrstuvwxyz"
@@ -68,6 +69,7 @@ const capitals:{[key:string]: string} = {
     return result
     }
 
+    // Menyamakan jawaban dengan key (menggunakan huruf kecil semua)
     function validAnswer (answer: string): string{
 
     let word = ''
@@ -80,7 +82,7 @@ const capitals:{[key:string]: string} = {
     return word
 }
 
-    
+    // Simpan sementara states
     const states = []
     for(const state in capitals){
         states.push(state)
@@ -98,7 +100,7 @@ const capitals:{[key:string]: string} = {
         }
 
         const correct_answer = capitals[random_state]
-        
+
         if(correct_answer === undefined){
             throw new Error("Invalid undefined value")
         }        
