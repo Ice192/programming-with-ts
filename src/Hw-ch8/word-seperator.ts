@@ -16,9 +16,11 @@ function toLower (char:string): string{
 
     for(let i = 0; i < capital.length; i++){
         if(char === capital[i]){
-            const huruf = lower[i]
-            result += huruf
+            result += lower[i]
         }
+    }
+    if(result === ''){
+        return char
     }
     return result
 }
