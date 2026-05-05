@@ -25,10 +25,10 @@ function capitalize (sentence: string) : string {
     let print = ''
     let shouldcapital = true
     for(const char of sentence){
-        if(shouldcapital && char !== " "){
+        if(shouldcapital && char !== " ") { 
             print += toUpper(char)
             shouldcapital = false
-        } else if(char === "."){
+        } else if (char === ".") {
             print += char
             shouldcapital = true
         }
