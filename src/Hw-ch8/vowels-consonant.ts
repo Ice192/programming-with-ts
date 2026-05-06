@@ -1,16 +1,16 @@
 import { question } from "readline-sync"
 
-function alphabetical(char: string) : boolean{
-    const chars = "aAbBcCdDeEfFgGhHiIjJkKlLmMnNoOpPqQrRsStTuUvVwWxXyYzZ"
+// function alphabetical(char: string) : boolean{
+//     const chars = "aAbBcCdDeEfFgGhHiIjJkKlLmMnNoOpPqQrRsStTuUvVwWxXyYzZ"
 
-    for(const huruf of chars){
-        if(huruf === char){
-            return true
-        }
-    }
+//     for(const huruf of chars){
+//         if(huruf === char){
+//             return true
+//         }
+//     }
 
-    return false
-}
+//     return false
+// }
 
 function countVowels (sentence: string) : number{
     const vowel = "aAuUiIoOeE"
