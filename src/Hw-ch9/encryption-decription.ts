@@ -31,10 +31,10 @@ const code:{[key: string]:string} = {
   ".": "R", ",": "s",
   "?": "U", "!": "E"
 }
-
+// Read file
 const text_file = fs.readFileSync("files/text.txt","utf-8")
-console.log(text_file);
 
+// Untuk mengubah text menjadi code
 function encryption (text: string): string{
 let print = ''
     for(const char of text){
@@ -52,12 +52,29 @@ const encryption_result = encryption(text_file)
 
 fs.writeFileSync("files/encryption.txt", encryption_result)
 
-let value = code.key
-console.log(value);
+// Menyimpan sementara property
+const code_key: string[] = []
+for(const x in code){
+    code_key.push(x)
+}
 
+// Untuk mengubah code menjadi text
+function decription (text: string): string{
+    let print = ''
+    for(const x of text){
+        if(x === ' '){
+            print += ' '
+        }
+        for(const y of code_key){
+            if(x === code[y]){
+                print += y
+            }
+        }
+    }
+    return print
+}
 
-// function decription (text: string): string{
-//     for(const x of text){
+const text_after_code = fs.readFileSync("files/encryption.txt","utf-8")
 
-//     }
-// }
+console.log(decription(text_after_code));
+

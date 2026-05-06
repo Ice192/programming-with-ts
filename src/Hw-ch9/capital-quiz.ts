@@ -82,7 +82,7 @@ const capitals:{[key:string]: string} = {
     return word
 }
 
-    // Simpan sementara states
+    // Simpan sementara states berisi property dari objek capitals
     const states = []
     for(const state in capitals){
         states.push(state)
