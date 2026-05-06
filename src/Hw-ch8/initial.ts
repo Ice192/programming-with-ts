@@ -3,7 +3,7 @@ import { question } from "readline-sync"
 function splitName (fullname: string) : string[]{
     const result = []
     let print = ''
-    for(const huruf of fullName){        
+    for(const huruf of fullname){        
         if(huruf !== " "){
             print += huruf
         } else if(print !== ''){
