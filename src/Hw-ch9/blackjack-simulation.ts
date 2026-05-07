@@ -171,6 +171,7 @@ console.log("Enemy   : " + dealer);
 console.log("Total your number : ", you_total);
 console.log("Total enemy number : ", enemy_total);
 
+// Memutuskan pemenang
 if (you_total > 21 && enemy_total > 21) {
     console.log("Draw")
 
