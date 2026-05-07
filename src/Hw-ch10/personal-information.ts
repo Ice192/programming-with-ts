@@ -45,7 +45,7 @@ you.set_name("Muhammad Rais")
 
 // you.name = "Muhammad Rais" 
 // console.log(you.name)
-// Bakal Error karena property private yang artinya hanya bisa diakses dan dimodifikasi didalam kelas
+// Bakal Error karena property private yang artinya hanya bisa diakses dan dimodifikasi didalam class
 
 you.get_personal()
 oval.get_personal()
