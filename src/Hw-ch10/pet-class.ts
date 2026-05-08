@@ -1,15 +1,15 @@
 import { log } from "node:console"
 
 class Pet{
-    name: string
-    animal_type: string
-    age: number
+    name?: string
+    animal_type?: string
+    age?: number
 
-    constructor(name:string, animal_type:string, age:number){
-        this.name = name
-        this.animal_type = animal_type
-        this.age = age
-    }
+    // constructor(name:string, animal_type:string, age:number){
+    //     this.name = name
+    //     this.animal_type = animal_type
+    //     this.age = age
+    // }
 
     set_name(pet_name: string){
         this.name = pet_name
@@ -36,7 +36,7 @@ class Pet{
     }
 }
 
-const cat = new Pet("Henry", "Cat", 5)
+const cat = new Pet()
 
 console.log(cat.get_name()); // Henry
 console.log(cat.get_animal_type()); // Cat
