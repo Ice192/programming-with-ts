@@ -1,0 +1,44 @@
+[
+    {
+        "id": "001",
+        "name": "Batu-001",
+        "weight": 1400,
+        "price": 32000000
+    },
+     {
+        "id": "002",
+        "name": "Batu-002",
+        "weight": 500,
+        "price": 9000000
+    },
+     {
+        "id": "003",
+        "name": "Batu-003",
+        "weight": 1000,
+        "price": 30000000
+    },
+     {
+        "id": "004",
+        "name": "Batu-004",
+        "weight": 800,
+        "price": 28000000
+    },
+     {
+        "id": "005",
+        "name": "Batu-005",
+        "weight": 1600,
+        "price": 35000000
+    },
+     {
+        "id": "006",
+        "name": "Batu-006",
+        "weight": 1400,
+        "price": 32000000
+    },
+     {
+        "id": "007",
+        "name": "Batu-007",
+        "weight": 500,
+        "price": 8500000
+    }
+]

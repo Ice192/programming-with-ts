@@ -58,7 +58,7 @@ function isThere (char: string): boolean{
     }
     return false
 }
-
+ 
 function cleanCard (player:string[]){
     const number_player = []
     let number = ''
@@ -74,7 +74,7 @@ function cleanCard (player:string[]){
     return number_player
 }
 
-function ruleAs (): number{
+function askAs (): number{
     let num = 0
     let isAgain = true
     while(isAgain){
@@ -101,7 +101,7 @@ function totalCard (player: string[], isPlayer: boolean): number {
         } else {
             if(value === "A"){
                 if(isPlayer){
-                    count += ruleAs()
+                    count += askAs()
                 } else {
                     if(count <= 10){
                         count += 11

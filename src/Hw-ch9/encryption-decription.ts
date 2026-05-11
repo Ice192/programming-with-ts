@@ -1,5 +1,4 @@
 import fs from 'fs'
-import { text } from 'stream/consumers';
 
 const code:{[key: string]:string} = {
   "A": "%", "a": "9",
