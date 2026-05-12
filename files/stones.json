@@ -1,0 +1,74 @@
+[
+  {
+    "id": "BST-001",
+    "name": "Batu Emas Merah",
+    "weight_kg": 1200,
+    "value_idr": 15000000
+  },
+  {
+    "id": "BST-002",
+    "name": "Batu Kristal Tua",
+    "weight_kg": 3400,
+    "value_idr": 42000000
+  },
+  {
+    "id": "BST-003",
+    "name": "Batu Hitam Vulkanik",
+    "weight_kg": 1800,
+    "value_idr": 21000000
+  },
+  {
+    "id": "BST-004",
+    "name": "Batu Sungai Berurat Emas",
+    "weight_kg": 950,
+    "value_idr": 11000000
+  },
+  {
+    "id": "BST-005",
+    "name": "Batu Giok Kuno",
+    "weight_kg": 2600,
+    "value_idr": 37000000
+  },
+  {
+    "id": "BST-006",
+    "name": "Batu Abu Tambang",
+    "weight_kg": 500,
+    "value_idr": 4000000
+  },
+  {
+    "id": "BST-007",
+    "name": "Batu Perak Retak",
+    "weight_kg": 1450,
+    "value_idr": 17000000
+  },
+  {
+    "id": "BST-008",
+    "name": "Batu Inti Gunung",
+    "weight_kg": 3900,
+    "value_idr": 53000000
+  },
+  {
+    "id": "BST-009",
+    "name": "Batu Lumut Hijau",
+    "weight_kg": 700,
+    "value_idr": 8000000
+  },
+  {
+    "id": "BST-010",
+    "name": "Batu Besi Padat",
+    "weight_kg": 2100,
+    "value_idr": 25000000
+  },
+  {
+    "id": "BST-011",
+    "name": "Batu Zamrud Kasar",
+    "weight_kg": 1300,
+    "value_idr": 22000000
+  },
+  {
+    "id": "BST-012",
+    "name": "Batu Emas Hitam",
+    "weight_kg": 2800,
+    "value_idr": 39000000
+  }
+]
