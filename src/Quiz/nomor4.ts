@@ -1,6 +1,34 @@
 import fs from "fs";
 
 const pangram = fs.readFileSync("files/pangram_test_set.txt", "utf8");
+const alphabet: { [key: string]: boolean } = {
+  a: true,
+  b: true,
+  c: true,
+  d: true,
+  e: true,
+  f: true,
+  g: true,
+  h: true,
+  i: true,
+  j: true,
+  k: true,
+  l: true,
+  m: true,
+  n: true,
+  o: true,
+  p: true,
+  q: true,
+  r: true,
+  s: true,
+  t: true,
+  u: true,
+  v: true,
+  w: true,
+  x: true,
+  y: true,
+  z: true,
+};
 
 function split(text: string): string[] {
   const result = [];
@@ -49,23 +77,19 @@ function toLower(text: string): string {
   return result;
 }
 
-function isThere(char: string, alphabet: string | string[]): boolean {
-  for (const x of alphabet) {
-    if (char === x) {
-      return true;
-    }
+function isThere(char: string): boolean {
+  if (alphabet[char]) {
+    return true;
   }
   return false;
 }
 
 function isPangram(text: string): boolean {
-  const alphabet = "abcdefghijklmnopqrstuvwxyz";
-
   let total = 0;
   const found: { [key: string]: boolean } = {};
   const lower_text = toLower(text);
   for (const char of lower_text) {
-    if (isThere(char, alphabet)) {
+    if (isThere(char)) {
       if (!found[char]) {
         found[char] = true;
         total++;
