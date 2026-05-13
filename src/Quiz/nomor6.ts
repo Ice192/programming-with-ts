@@ -61,6 +61,6 @@ for (const stone of collect) {
   console.log(`${stone.id} - ${stone.name} | ${stone.weight_kg}kg`);
 }
 
-console.log("\nTotal Berat:", currentWeight);
+console.log("Total Berat:", currentWeight);
 
 console.log("Total Profit:", totalProfit);

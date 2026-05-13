@@ -1,12 +1,6 @@
 import fs from "fs";
 import { question } from "readline-sync";
 
-type stat = {
-  name: string;
-  hp: number;
-  armor: number;
-  attack: number;
-};
 class Character {
   name: string;
   hp: number;
@@ -32,8 +26,6 @@ function split(text: string) {
     if (x === "\n") {
       result.push(word);
       word = "";
-    } else if (x === "\r") {
-      continue;
     } else {
       word += x;
     }
@@ -45,6 +37,8 @@ function split(text: string) {
 }
 const group_first = split(first_name);
 const group_last = split(last_name);
+
+console.log(group_first);
 
 const fullName = [];
 
