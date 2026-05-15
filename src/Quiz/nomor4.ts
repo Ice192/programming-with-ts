@@ -54,19 +54,41 @@ function split(text: string): string[] {
 function toLower(text: string): string {
   let result = "";
 
-  const lower = "abcdefghijklmnopqrstuvwxyz";
-  const higher = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+  const lower: { [key: string]: string } = {
+    a: "A",
+    b: "B",
+    c: "C",
+    d: "D",
+    e: "E",
+    f: "F",
+    g: "G",
+    h: "H",
+    i: "i",
+    j: "J",
+    k: "K",
+    l: "L",
+    m: "M",
+    n: "N",
+    o: "O",
+    p: "P",
+    q: "Q",
+    r: "R",
+    s: "S",
+    t: "T",
+    u: "U",
+    v: "V",
+    w: "W",
+    x: "X",
+    y: "Y",
+    z: "Z",
+  };
+
   for (const char of text) {
     let current = char;
 
-    for (let i = 0; i < higher.length; i++) {
-      if (char === higher[i]) {
-        const kecil = lower[i];
-        if (kecil === undefined) {
-          throw new Error("Invalid Undefined");
-        }
-        current = kecil;
-
+    for (const low in lower) {
+      if (char === lower[low]) {
+        current = low;
         break;
       }
     }
